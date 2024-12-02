@@ -29,3 +29,26 @@ Make sure you have the following installed:
    ```bash
    git clone https://github.com/CyBueze/devtools.git
    cd devtools
+
+2. Create a virtual environment:
+  ```bash
+  python3 -m venv venv
+
+3. Activate the virtual env:
+ - On macOS/Linux:
+   source venv/bin/activate
+ - On Windows:
+
+4. Install dependencies:
+  pip install -r requirements.txt
+  
+5. Apply migrations:
+  python manage.py migrate
+
+6. Run server:
+  python manage.py runserver
+  
+7. Populate the database by running a POST request when testing the API.
+
+
+I hope you enjoy using this API as much as i enjoyed creating it.
