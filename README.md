@@ -31,13 +31,12 @@ Make sure you have the following installed:
    cd devtools
 
 2. Create a virtual environment:
-  ```bash
-  python3 -m venv venv
+  ```bash python3 -m venv venv```
 
 3. Activate the virtual env:
  - On macOS/Linux:
-   ```bash
-   source venv/bin/activate
+   ```bash 
+   source venv/bin/activate ```
  - On Windows:
 
 4. Install dependencies:
