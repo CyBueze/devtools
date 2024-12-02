@@ -25,7 +25,7 @@ schema_view = get_schema_view(
             title = "DevTools API",
             default_version = "v1",
             description = "API for managing development tools",
-            contact = openapi.Contact(email = "example@devtools.com"),
+            contact = openapi.Contact(email = "caretsquare@gmail.com"),
             liscense = openapi.License(name = "BSD License"),
             ),
         public = True,
@@ -37,5 +37,6 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('devtools.urls')),
-    path('swagger/', schema_view.with_ui('swagger', cache_timeout=3600), name='schema-swagger-ui')
+    path('swagger/', schema_view.with_ui('swagger', cache_timeout=3600), name='schema-swagger-ui'),
+    path('', include('core.urls'))
 ]

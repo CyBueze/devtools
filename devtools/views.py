@@ -15,7 +15,7 @@ class DevToolList(APIView):
     """
     def get(self, request: Any) -> Response:
         """
-        Function that handles getting all objects in the database or raises exception.
+        Handles getting all tools in the database or raises exception.
         """
 
         tools = DevTool.objects.all()

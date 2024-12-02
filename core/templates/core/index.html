@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DevTool API</title>
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+</head>
+<body>
+  <div class="bg-dark">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1 text-white">DevTool API Documentation</span>
+      </div>
+    </nav>
+</div>
+
+ <div class="container my-3">
+   <p class="display-6">DevTool is a simple API that helps you list, create, update and delete your favourite web development tools and resources.</p>
+ </div>
+ 
+ <div class="container">
+   <h4>Tools Used</h4>
+   <ul>
+     <li>
+       Django and Django Rest Framework - <span class="text-success">For building the backend of the RESTful API</span>
+     </li>
+     <li>
+       SwaggerUI - <span class="text-success">For proper documentation and testing of the RESTful API</span>
+     </li>
+     <li>Postgresql - <span class="text-danger">SQLite was used even though Postgresql was demanded due to technical issues but it will be added in newer versions.</span></li>
+   </ul>
+ </div>
+ 
+ <div class="container text-center my-3">
+   <a href="{% url 'schema-swagger-ui' %}">
+     <button class="btn btn-success"> Explore API with SwaggerUI</button>
+   </a>
+ </div>
+ 
+ <div class="container my-4 py-2">
+   <h6> If you prefer to explore it using the drf interface, you can access the endpoints via the address bar:</h6>
+   <p class="text-secondary"><span class="text-primary">/api/devtools</span> - [GET request for listing all tools]
+   </p>
+   <p class="text-secondary"><span class="text-success">/api/devtools</span> - [POST request for adding one tool]
+   </p>
+   <p class="text-secondary"><span class="text-primary">/api/devtools/{id}</span> - [GET request for listing a single tool]
+   </p>
+   <p class="text-secondary"><span class="text-warning">/api/devtools/{id}</span> - [PUT request for updating a single tool]
+   </p>
+   <p class="text-secondary"><span class="text-danger">/api/devtools/{id}</span> - [DELETE request for deleting a single tool]
+   </p>
+ </div>
+ 
+ <div class="container">
+ <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header">Please Note</div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">This current version of the project is incomplete but undergoing active development. Features that are currently absent but would be added in future versions include:</p>
+    <ul>
+      <li>
+        Postgresql will be used as a database to replace SQLite.
+      </li>
+      <li>Authentication and authorization, using JWT and DRF permissions.
+      </li>
+      <li>To access current version of this project, clone the GitHub repo by clicking <a href="https://github.com/CyBueze/devtools.git">https://github.com/CyBueze/devtools.git</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+ 
+ <!-- Footer -->
+ <footer class="bg-light text-center py-3">
+    <p class="mb-0">Built by Chibueze</p>
+    <a href="https://github.com/CyBueze" target="_blank" class="text-decoration-none">
+        <small>View His GitHub</small>
+    </a>
+</footer>
+
+ 
+ 
+</body>
+</html>

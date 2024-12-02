@@ -39,12 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     # my apps
+    'core',
     'devtools',
 
 
     # 3rd-party apps
     'rest_framework',  # For django rest framework
-    'drf_yasg', # For documentation by swaggerUI
+    'drf_yasg', # For documentation by swaggerUI,
+    'bootstrap5', # For the syling of the front page
 
 ]
 
