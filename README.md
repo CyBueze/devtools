@@ -36,17 +36,22 @@ Make sure you have the following installed:
 
 3. Activate the virtual env:
  - On macOS/Linux:
+   ```bash
    source venv/bin/activate
  - On Windows:
 
 4. Install dependencies:
+  ```bash
   pip install -r requirements.txt
   
 5. Apply migrations:
+  ```bash
   python manage.py migrate
 
 6. Run server:
+  ```bash
   python manage.py runserver
+ ```
   
 7. Populate the database by running a POST request when testing the API.
 
